@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<title >
+ Online Shopping
+</title >
+</head>
+<body>
+<center>
+<h2> The Shopnetic Online Shopping</h2>
+<nav >
+<a href="second.html">Home</a> |
+<a href="contact.html">Contact</a> |
+<a href="about.html">About </a>
+</nav>
+<h3> Trending &&More sale products </h3>
+<nav>
+<a href="product1.html">
+<img src="product1.webp"  width ="350" height ="300"> 
+</a>
+<h3> Trending products </h3>
+
+
+<a href="product2.html">
+<img src="product2.webp" width ="350" height ="300">
+</a> 
+<h3> Airpods </h3>
+
+
+<a href="product3.html">
+<img src="product3.jpg" width ="350" height ="300"> 
+</a>
+<h3> Pants </h3>
+
+<br> <br>
+<a href="product4.html">
+<img src="product4.jpg" width ="350" height ="300"> 
+</a>
+<h3>Watches  </h3>
+
+<a href="product5.html">
+<img src="product5.webp" width ="350" height ="300"> 
+</a>
+<h3> Shoes </h3>
+
+<a href="product6.html">
+<img src="product6.webp" width ="350" height ="300"> 
+</a>
+<h3> Cosmetics </h3>
+
+</nav>
+
+<h3> The Genearted voice over </h3>
+<audio controls>
+<Source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"></src>
+ </audio>
+<h3> The product demo </h3>
+<video controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+</video>
+</center>
+<h2> Categories </h2>
+<ol>
+<li> Men's Outfit </li>
+<li> Women's Outfit </li>
+<li> kid 's Outfit </li>
+<li> Home Appliances </li>
+<li> Electronic Gadgets</li>
+
+</ol>
+
+<h2> Cart</h2>
+<h3>
+<a href="cart.html"> Add the products </a>
+</h3>
+<h3> To See the user Location current place  latitude and longitude </h3>
+<p id="demo">   </p><br>
+
+<button onclick="getlocation()">Get My Location</button>
+<script>
+    var x=document.getElementById("demo");
+
+    function getlocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showposition)
+        }
+        else{
+            x.innerHTML=" the geo location is not supported in a browser";
+        }
+    }
+
+    function showposition(position){
+        x.innerHTML="Lattiude :"+position.coords.latitude +"<br> Longitude:"+position.coords.longitude;
+    }
+</script>
+
+
+<h3> Contact : 7282982993</h3>
+<h3> Gmail:hsjn@gmail.com</h3>
+</body>
+
+</html>
