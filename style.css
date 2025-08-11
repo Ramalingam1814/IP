@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+body{
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.title:hover{
+    color: darkgreen;
+    background-color: aliceblue;
+    transition:3s;
+}
+.content:hover{
+    color: gold;
+    background-color: aliceblue;
+    transition: 3s;
+}
+.container img:hover{
+    transform: rotate(5deg);
+}
+.container img{
+    border-radius: 20px;
+}
+.cont:hover{
+    color: green;
+    background-color:white ;
+    transition: 3s;
+}
+.abo:hover{
+    color: green;
+    background-color:white ;
+    transition: 3s;
+}
